@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 228 14% 4%;
+    --foreground: 0 0% 100%;
+    --card: 228 20% 7%;
+    --card-foreground: 0 0% 100%;
+    --popover: 228 20% 7%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 187 100% 42%;
+    --primary-foreground: 228 14% 4%;
+    --secondary: 228 16% 12%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 228 16% 12%;
+    --muted-foreground: 216 14% 65%;
+    --accent: 187 100% 42%;
+    --accent-foreground: 228 14% 4%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 228 16% 16%;
+    --input: 228 16% 16%;
+    --ring: 187 100% 42%;
+    --radius: 0.75rem;
+    --sidebar-background: 228 20% 5%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 187 100% 42%;
+    --sidebar-primary-foreground: 228 14% 4%;
+    --sidebar-accent: 228 16% 12%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 228 16% 16%;
+    --sidebar-ring: 187 100% 42%;
+    --chat-user: 187 100% 42%;
+    --chat-assistant: 228 16% 12%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+@layer utilities {
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 4px;
+  }
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background: hsl(var(--border));
+    border-radius: 999px;
+  }
+}
