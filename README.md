@@ -19,7 +19,7 @@ React · TypeScript · FastAPI · Azure OpenAI
 
 > Watch the full demo below:
 
-https://github.com/AryanKadar/volo-health-ai/assets/demo/Demo_video.mp4
+https://github.com/AryanKadar/volo-health-ai/raw/main/Demo_video.mp4
 
 ---
 
